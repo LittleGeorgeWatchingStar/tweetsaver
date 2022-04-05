@@ -1,0 +1,23 @@
+{
+  "name": "tweetsaver",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Steven Zhang Creation",
+  "main": "ExtjsModels.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LittleGeorgeWatchingStar/tweetsaver.git"
+  },
+  "author": "Steven Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LittleGeorgeWatchingStar/tweetsaver/issues"
+  },
+  "homepage": "https://github.com/LittleGeorgeWatchingStar/tweetsaver#readme",
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
+}

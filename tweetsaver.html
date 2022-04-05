@@ -1,0 +1,74 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+<style type="text/css">
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: #1da1f2;
+}
+.twitter-item {
+	background-color: #ffffff;
+	z-index: 1;
+}
+#header1 {
+	display: inline;
+	clear: none;
+}
+#header2 {
+	display: inline;
+	clear: none;
+	margin-left: 44%;
+}
+.tweetAndSave {
+	display: flex;
+}
+.ui-draggable-dragging {
+	z-index: 2;
+}
+.tweets-container {
+	border: 1px solid black;
+	padding: 3px;
+	background-color: #ffffff;
+}
+.save-container {
+	background-color: #FFFFFF;
+	border: 1px solid black;
+	padding: 3px;
+	flex: 1;
+}
+.tweetprofileLink {
+	display: inline-block;
+	margin-left: 6px;
+}
+img {
+	padding-right: 1px;
+}
+</style>
+</head>
+<body>
+	<h1>Tweet Saver</h1>
+	<input id="query" placeholder="For example Canada" />
+		<select id="tweetCount">
+  		<option value="5" selected>5</option>
+  		<option value="10">10</option>
+  		<option value="15">15</option>
+  		<option value="20">20</option>
+	</select>
+	<button onclick="tweetLookUp()" width="20px" height="14px">Search</button>
+	<button onclick="clearSavedTweets()" width="20px" height="30px">Delete All</button>
+	<br />
+	<br />
+	<h2 id="header1">Tweet Feed</h2>
+	<h2 id="header2">Saved Tweets</h2>
+	<div class="tweetAndSave">
+		<div class="tweets-container" style="width: 45%; height: 800px"></div>
+		<div class="save-container" style ="width: 45%; height: 800px"></div>
+	</div>
+</body>
+<script type="text/javascript" src="tweetSaver.js"></script>
+<script type="text/javascript"></script>
+</html>
